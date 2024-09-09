@@ -1,0 +1,155 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  
+  .navbar {
+    background-color: #f5f7fa;
+    padding: 10px 0;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo a {
+    color: #1c1a1a;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .navbar .nav-links li {
+    margin-left: 15px;
+  }
+  
+  .navbar .nav-links a {
+    color: #1b1919;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #545151;
+  }
+  
+  
+  .hero {
+    height: 250px;
+    background-image: url('./img/doge.avif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+
+  .btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+
+  #dogImage {
+    margin-top: 15px;
+    max-width: 100%;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+  }
+  
+
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .container {
+      padding: 15px;
+    }
+  }
+  
+
+  #breedList .breed img {
+    width: 100%; 
+    max-width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  }

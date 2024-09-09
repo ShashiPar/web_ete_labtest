@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  .navbar {
+    background-color: #f5f7fa;
+    padding: 10px 0;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo a {
+    color: #1c1a1a;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .navbar .nav-links li {
+    margin-left: 15px;
+  }
+  
+  .navbar .nav-links a {
+    color: #1b1919;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #545151;
+  }
+  
+  .hero-about {
+    height: 400px;
+    background-image: url('./img/doggie.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+  }
+  

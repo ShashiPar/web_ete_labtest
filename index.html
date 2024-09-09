@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dogepedia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="#">Dogepedia</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#breedList">Breeds</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Doge</h1>
+      </div>
+    </section>
+
+    <div class="container">
+      <h2 class="mt-4">Fetch Dog Image</h2>
+      <button id="fetchDog" class="btn btn-primary">Fetch Dog Image</button>
+      <br />
+      <img id="dogImage" src="" class="img-fluid" />
+    </div>
+
+    <div class="container mt-5">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input
+            type="date"
+            class="form-control"
+            id="dob"
+            placeholder="Enter your date of birth"
+          />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" class="form-control">
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="breed">Favorite Dog Breed</label>
+          <input
+            type="text"
+            class="form-control"
+            id="breed"
+            placeholder="Enter your favorite breed"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="preferences">Preferences</label>
+          <textarea
+            class="form-control"
+            id="preferences"
+            rows="3"
+            placeholder="Tell us about your preferences"
+          ></textarea>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="terms" required />
+          <label class="form-check-label" for="terms"
+            >I agree to the terms and conditions</label
+          >
+        </div>
+        <button type="submit" class="btn btn-success">Sign Up</button>
+      </form>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Dog Breeds</h2>
+      <div id="breedList" class="row"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
